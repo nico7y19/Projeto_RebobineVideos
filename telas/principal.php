@@ -130,7 +130,14 @@ if ($categoria === 'todos') {
 
   </div>
   <!--Filmes em clássicos fim-->
-  <h1>Filmes para aluguel</h1>
+  <h1>Filmes <?php
+  if ($categoria === 'todos') {
+    echo 'disponíveis';
+  } else {
+    echo "de $categoria";
+  }
+
+  ?></h1>
 
   <div class="container-fluid py-5">
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 px-3">
