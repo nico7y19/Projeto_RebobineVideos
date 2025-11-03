@@ -20,7 +20,7 @@ $filmeId = $_GET['id'];
 require_once '../bancoDados/bancoDados.php';
 require_once '../DAO/filmeDAO.php';
 $filmeDAO = new filmeDAO(getDbConnection());
-$filmeSelecionado = $filmeDAO->getFilmeById($filmeId);
+$filmeSelecionado = $filmeDAO->getFilmePorId($filmeId);
 
 // Extrai os dados do filme retornado
 $tituloFilme = $filmeSelecionado['nome'];

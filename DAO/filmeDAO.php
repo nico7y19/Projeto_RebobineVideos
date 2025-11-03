@@ -33,7 +33,7 @@ class filmeDAO
     }
 
     // Função para obter um filme específico pelo seu ID
-    public function getFilmeById($id)
+    public function getFilmePorId($id)
     {
         // Query SQL para selecionar um filme específico pelo seu ID
         $query = "SELECT * FROM " . $this->table_name . " WHERE id = :id LIMIT 0,1";
@@ -49,6 +49,24 @@ class filmeDAO
 
         // Retorna o filme como um array associativo
         return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public function getFilmePorCategoria($categoria)
+    {
+
+        $query = "SELECT * FROM " . $this->table_name . " WHERE categoria = :categoria";
+
+        // Prepara a query desse objeto
+        $stmt = $this->conn->prepare($query);
+
+        // Vincula o parâmetro ID à query preparada
+        $stmt->bindParam(':categoria', $categoria);
+
+        // Executa a query preparada
+        $stmt->execute();
+
+        // Retorna o filme como um array associativo
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 }
 

@@ -3,7 +3,15 @@ require_once '../dao/filmeDAO.php';
 require_once '../bancoDados/bancoDados.php';
 
 $filmeDAO = new filmeDAO(getDbConnection());
-$filmes = $filmeDAO->getAllFilmes();
+$categoria = $_GET['categoria'] ?? 'todos';
+
+if ($categoria === 'todos') {
+  $filmes = $filmeDAO->getAllFilmes();
+} else {
+  $filmes = $filmeDAO->getFilmePorCategoria($categoria);
+}
+
+
 
 ?>
 
@@ -63,7 +71,7 @@ $filmes = $filmeDAO->getAllFilmes();
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home </a>
+            <a class="nav-link active" aria-current="page" href="#">Sair</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -72,17 +80,20 @@ $filmes = $filmeDAO->getAllFilmes();
             </a>
 
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Terror</a></li>
-              <li><a class="dropdown-item" href="#">Comédia</a></li>
-              <li><a class="dropdown-item" href="#">Romance</a></li>
-              <li><a class="dropdown-item" href="#">Ficção</a></li>
-              <li><a class="dropdown-item" href="#">Aventura</a></li>
-              <li><a class="dropdown-item" href="#">Ação</a></li>
-              <li><a class="dropdown-item" href="#">Drama</a></li>
+              <li><a class="dropdown-item" href="?categoria=todos">Todos</a></li>
+              <li><a class="dropdown-item" href="?categoria=Terror">Terror</a></li>
+              <li><a class="dropdown-item" href="?categoria=Mistério">Mistério</a></li>
+              <li><a class="dropdown-item" href="?categoria=Romance">Romance</a></li>
+              <li><a class="dropdown-item" href="?categoria=Ficção Científica">Ficção Científica</a></li>
+              <li><a class="dropdown-item" href="?categoria=Aventura">Aventura</a></li>
+              <li><a class="dropdown-item" href="?categoria=Ação">Ação</a></li>
+              <li><a class="dropdown-item" href="?categoria=Drama">Drama</a></li>
+              <li><a class="dropdown-item" href="?categoria=Guerra">Guerra</a></li>
+              <li><a class="dropdown-item" href="?categoria=Suspense">Suspense</a></li>
+              <li><a class="dropdown-item" href="?categoria=Crime">Crime</a></li>
             </ul>
           </li>
         </ul>
-
 
       </div>
     </div>
