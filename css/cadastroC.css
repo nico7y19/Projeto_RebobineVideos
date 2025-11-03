@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'fonte_titulo';
+  src: url('../fontes/fonte_titulo.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'fonte2_titulo';
+  src: url('../fontes/fonte2_titulo.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'fonte3';
+  src: url('../fontes/fonte3.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'fonte4';
+  src: url('../fontes/fonte4.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'fonte5';
+  src: url('../fontes/fonte5.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'fonte6';
+  src: url('../fontes/fonte6.ttf') format('truetype');
+}
+
+
+    body {
+        font-family: 'fonte3';
+        letter-spacing: 4px;
+        background-image: url('../imagem/foto_fundo.png'); /* 1. Define a imagem de fundo */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-repeat: no-repeat; /* 2. Impede a repetição da imagem */
+        background-size: 100% 100%; /* 3. Ajusta a imagem para cobrir todo o fundo */
+        background-position: center; /* 4. Centraliza a imagem */
+       
+    }
+    .login-container {
+        background: #333349;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 450px;
+        height: 520px;
+        border: 3px solid #000000;
+    }
+    h2 {
+        text-align: center;     
+        margin-bottom: 25px;
+        font-family: 'fonte6';
+        color: #f3cd34;
+         text-shadow: 0 0 50px #d6550a, 0 0 10px #ff9100;
+         letter-spacing: 4px;
+        font-size: 50px;
+    }
+    .formulario {
+        margin-bottom: 5px;
+        margin-right: 50px;
+        margin-left: 50px;
+
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-family: 'fonte6';
+        color: #f3cd34;
+         text-shadow: 0 0 50px #d6550a, 0 0 10px #ff9100;
+         letter-spacing: 4px;         
+         font-size: 20px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    button {
+        width: 80%;
+        padding: 10px;
+        background-color: #f3cd34;
+        color: #333349;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 20px;
+       font-family: 'fonte6';
+       letter-spacing: 2px;
+        margin-right: 50px;
+        margin-left: 50px;
+        margin-top: 15px;
+    }
+    button:hover {
+        background-color: #af921c;
+    }
+
+    p{
+          text-align: center;
+          margin-top: 15px;
+          font-size: 15px;
+          color: #ffcc00;
+          margin-right: 50px;
+        margin-left: 50px;
+        font-family: 'fonte6';
+    }
+
+    .registre{
+        color: #ffcc00;
+        
+    }
+
+    .data{
+  
+      width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+             border-radius: 4px;
+            outline: none;
+            transition: all 0.2s ease;
+            font-size: 15px;
+             font-family: 'fonte6';
+             letter-spacing: 2px;
+  }
