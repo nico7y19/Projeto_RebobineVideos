@@ -102,8 +102,8 @@ if (!empty($dataDevolucao)) {
                     </div>
                     <div class="col-md-6">
                         <label class="form-label">Valor Total</label>
-                        <input type="text" class="form-control"
-                            value="R$ <?= number_format($valorTotal, 2, ',', '.') ?>" readonly>
+                        <input type="text" class="form-control" id="valor_total" name="valor_total"
+                            value="<?= number_format($valorTotal, 2, ',', '.') ?>" readonly>
                     </div>
                 </div>
 
@@ -132,8 +132,9 @@ if (!empty($dataDevolucao)) {
                 $dataLocacao = $_POST['data_locacao'];
                 $dataDevolucao = $_POST['data_devolucao'];
                 $cliente_id = $_SESSION['id_cliente']; // ID do cliente armazenado na sessão
-    
-                $locacao = new locacao(0, $filmeId, $cliente_id, $dataLocacao, $dataDevolucao);
+                $valor = $_POST['valor_total'];
+
+                $locacao = new locacao(0, $filmeId, $cliente_id, $dataLocacao, $dataDevolucao, $valor);
                 $locacaoDAO = new locacaoDAO(getDbConnection());
 
                 if ($locacaoDAO->salvarLocacao($locacao)) {

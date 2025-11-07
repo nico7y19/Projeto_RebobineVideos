@@ -1,51 +1,56 @@
 /* Definição das fontes personalizadas */
 
 @font-face {
-  font-family: 'fonte_titulo';
-  src: url('../fontes/fonte1_titulo.ttf') format('truetype');
+  font-family: "fonte_titulo";
+  src: url("../fontes/fonte1_titulo.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'fonte2_titulo';
-  src: url('../fontes/fonte2_titulo.ttf') format('truetype');
+  font-family: "fonte2_titulo";
+  src: url("../fontes/fonte2_titulo.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'fonte3';
-  src: url('../fontes/fonte3.ttf') format('truetype');
+  font-family: "fonte3";
+  src: url("../fontes/fonte3.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'fonte4';
-  src: url('../fontes/fonte4.ttf') format('truetype');
+  font-family: "fonte4";
+  src: url("../fontes/fonte4.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'fonte5';
-  src: url('../fontes/fonte5.ttf') format('truetype');
+  font-family: "fonte5";
+  src: url("../fontes/fonte5.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'fonte6';
-  src: url('../fontes/fonte6.ttf') format('truetype');
+  font-family: "fonte6";
+  src: url("../fontes/fonte6.ttf") format("truetype");
 }
-
 
 .borda-piscando {
-      border: 4px solid #d4bd38;
-      animation: piscar 1s infinite;
-      box-shadow: 0 0 6px #faec6d, 0 0 50px #ff6600;
-    }
+  border: 4px solid #d4bd38;
+  animation: piscar 1s infinite;
+  box-shadow: 0 0 6px #faec6d, 0 0 50px #ff6600;
+}
 
-    @keyframes piscar {
-      0%   { border-color: #d4bd38; }
-      50%  { border-color: transparent; }
-      100% { border-color: #d4bd38; }
-    }
+@keyframes piscar {
+  0% {
+    border-color: #d4bd38;
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #d4bd38;
+  }
+}
 
 h1 {
   text-align: center;
- font-family: 'fonte6';
+  font-family: "fonte6";
   letter-spacing: 4px;
   font-size: 2.8rem;
   color: #1c1c2a;
@@ -55,96 +60,89 @@ h1 {
 }
 
 .card-title {
-  font-family: 'fonte6';
+  font-family: "fonte6";
   letter-spacing: 4px;
   font-size: 1.4rem;
   color: #ffcc00;
   text-transform: uppercase;
-  
 }
 
-
-.tituloClassico{
-  font-family: 'fonte6';
+.tituloClassico {
+  font-family: "fonte6";
   letter-spacing: 4px;
   font-size: rem;
   color: #1c1c2a;
   text-shadow: 0 0 6px #faec6d, 0 0 20px #ffcc00;
-
 }
 
-.btnAlugar{
-  font-family: 'fonte6';
+.btnAlugar {
+  font-family: "fonte6";
   letter-spacing: 4px;
   font-size: 20px;
   text-transform: uppercase;
   align-items: center;
-margin-top: 10px;
+  margin-top: 10px;
 }
 
-.navbar-brand{
-  font-family: 'fonte6';
+.navbar-brand {
+  font-family: "fonte6";
   letter-spacing: 4px;
   font-size: 1.5rem;
-  
 }
-
 
 /* Botão alugar*/
 
-.button{
-  position:relative;
-  display:inline-block;
-  margin:20px;
+.button {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
 }
 
-.button a{
-  color:white;
-  font-family:Helvetica, sans-serif;
-  font-weight:bold;
-  font-size:36px;
+.button a {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
   text-align: center;
-  text-decoration:none;
-  background-color:#FFA12B;
-  display:block;
-  position:relative;
-  padding:5px 20px;
-  
+  text-decoration: none;
+  background-color: #ffa12b;
+  display: block;
+  position: relative;
+  padding: 5px 20px;
+
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   text-shadow: 0px 1px 0px #000;
   filter: dropshadow(color=#000, offx=0px, offy=1px);
-  
-  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
-  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
-  box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
-  
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
+  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #915100;
+
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
 
-.button a:active{
-  top:10px;
-  background-color:#F78900;
-  
-  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
-  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
-  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+.button a:active {
+  top: 10px;
+  background-color: #f78900;
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #915100;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #915100;
+  box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #915100;
 }
 
-.button:after{
-  content:"";
-  height:100%;
-  width:100%;
-  padding:4px;
+.button:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 4px;
   position: absolute;
-  bottom:-15px;
-  left:-4px;
-  z-index:-1;
-  background-color:#2B1800;
+  bottom: -15px;
+  left: -4px;
+  z-index: -1;
+  background-color: #2b1800;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-
-

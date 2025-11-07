@@ -1,127 +1,123 @@
-
-   
-   /* Definição das fontes personalizadas */
+/* Definição das fontes personalizadas */
 
 @font-face {
-  font-family: 'fonte_titulo';
-  src: url('../fontes/fonte1_titulo.ttf') format('truetype');
+  font-family: "fonte_titulo";
+  src: url("../fontes/fonte1_titulo.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'fonte2_titulo';
-  src: url('../fontes/fonte2_titulo.ttf') format('truetype');
+  font-family: "fonte2_titulo";
+  src: url("../fontes/fonte2_titulo.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'fonte3';
-  src: url('../fontes/fonte3.ttf') format('truetype');
+  font-family: "fonte3";
+  src: url("../fontes/fonte3.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'fonte4';
-  src: url('../fontes/fonte4.ttf') format('truetype');
+  font-family: "fonte4";
+  src: url("../fontes/fonte4.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'fonte5';
-  src: url('../fontes/fonte5.ttf') format('truetype');
+  font-family: "fonte5";
+  src: url("../fontes/fonte5.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'fonte6';
-  src: url('../fontes/fonte6.ttf') format('truetype');
+  font-family: "fonte6";
+  src: url("../fontes/fonte6.ttf") format("truetype");
 }
-   h3{
-            text-align: center;
-            font-family: 'fonte6';
-            letter-spacing: 4px;
-            font-size: 2.8rem;
-            color: #1c1c2a;
-            text-shadow: 0 0 6px #faec6d, 0 0 20px #ffcc00;
-            padding-top: 30px;
-        }
-        
-        body {
-            background-color: #1c1c2a;
-            color: #fff;
-            min-height: 100vh;
-            font-family: 'fonte6';
-            letter-spacing: 2px;
-            font-size: 15px;
-        }
+h3 {
+  text-align: center;
+  font-family: "fonte6";
+  letter-spacing: 4px;
+  font-size: 2.8rem;
+  color: #1c1c2a;
+  text-shadow: 0 0 6px #faec6d, 0 0 20px #ffcc00;
+  padding-top: 30px;
+}
 
-        .header-placeholder {
-            height: 50px;
-        }
+body {
+  background-color: #1c1c2a;
+  color: #fff;
+  min-height: 100vh;
+  font-family: "fonte6";
+  letter-spacing: 2px;
+  font-size: 15px;
+}
 
-        .container-locacao {
-            background-color: #1c1c2a;
-            border-radius: 15px;
-            padding: 30px;
-            max-width: 800px; 
-            margin: 40px auto;
-            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
-        }
+.header-placeholder {
+  height: 50px;
+}
 
-        .filme-card {
-            background-color: #1c1c2a;
-            border: 1px solid #ffd700;
-            border-radius: 12px;
-            overflow: hidden;
-            margin-bottom: 25px;
-        }
+.container-locacao {
+  background-color: #1c1c2a;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
 
-        .filme-card img {
-            width: 100%;
-            height: 350px;
-            object-fit: cover;
-        }
+.filme-card {
+  background-color: #1c1c2a;
+  border: 1px solid #ffd700;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
 
-        .filme-info {
-            padding: 15px;
-        }
+.filme-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
 
-        .filme-info h5 {
-            color: #ffd700;
-            margin-bottom: 8px;
-        }
+.filme-info {
+  padding: 15px;
+}
 
-        .filme-info p {
-            margin: 0;
-        }
+.filme-info h5 {
+  color: #ffd700;
+  margin-bottom: 8px;
+}
 
-        .form-section {
-            background-color: #1c1c2a; 
-            padding: 20px;
-            border-radius: 10px;
-        }
+.filme-info p {
+  margin: 0;
+}
 
-        .form-label {
-            color: #ffd700;
-        }
+.form-section {
+  background-color: #1c1c2a;
+  padding: 20px;
+  border-radius: 10px;
+}
 
-        .btn-alugar {
-            background-color: #1c1c2a;
-            border: none;
-            color: #e0c100;
-            font-weight: bold;
-            transition: all 0.3s;
-            box-shadow: 0 0 6px #faec6d, 0 0 20px #ffcc00;
-            margin-top: 20px;
-            letter-spacing: 2px;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
+.form-label {
+  color: #ffd700;
+}
 
-        .btn-alugar:hover {
-            background-color: #1c1c2a;
-            color: #e0c100;
-        }
-        
-        .btn-alugar:active {
-            box-shadow: inset 0 0 10px #1c1c2a;
-            background-color: #e0c100;
-            color: #1c1c2a;
-        }
+.btn-alugar {
+  background-color: #1c1c2a;
+  border: none;
+  color: #e0c100;
+  font-weight: bold;
+  transition: all 0.3s;
+  box-shadow: 0 0 6px #faec6d, 0 0 20px #ffcc00;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
-        
+.btn-alugar:hover {
+  background-color: #1c1c2a;
+  color: #e0c100;
+}
+
+.btn-alugar:active {
+  box-shadow: inset 0 0 10px #1c1c2a;
+  background-color: #e0c100;
+  color: #1c1c2a;
+}

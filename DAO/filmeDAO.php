@@ -58,13 +58,10 @@ class filmeDAO
 
         // Prepara a query desse objeto
         $stmt = $this->conn->prepare($query);
-
         // Vincula o parâmetro ID à query preparada
         $stmt->bindParam(':categoria', $categoria);
-
         // Executa a query preparada
         $stmt->execute();
-
         // Retorna o filme como um array associativo
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }

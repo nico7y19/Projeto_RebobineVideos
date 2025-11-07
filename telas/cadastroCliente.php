@@ -77,7 +77,9 @@
             exit();
         } else {
             // Exibe mensagem de erro caso o registro falhe
-            echo "<p>Erro ao registrar cliente.</p>";
+            echo "<script>alert('Erro ao registrar cliente..');
+                    window.location.href = 'login.php';
+            </script>";
         }
 
     }

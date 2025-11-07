@@ -57,7 +57,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header('Location: principal.php');
     exit();
   } else {
-    echo "<p>Login falhou. Verifique suas credenciais.</p>";
+    echo "<script>alert('Login falhou. Verifique suas credenciais.');
+                    window.location.href = 'login.php';
+            </script>";
+
   }
 
 }

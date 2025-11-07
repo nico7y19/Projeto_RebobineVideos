@@ -11,8 +11,6 @@ if ($categoria === 'todos') {
   $filmes = $filmeDAO->getFilmePorCategoria($categoria);
 }
 
-
-
 ?>
 
 <!DOCTYPE html>
@@ -70,9 +68,7 @@ if ($categoria === 'todos') {
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Sair</a>
-          </li>
+
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -92,6 +88,14 @@ if ($categoria === 'todos') {
               <li><a class="dropdown-item" href="?categoria=Suspense">Suspense</a></li>
               <li><a class="dropdown-item" href="?categoria=Crime">Crime</a></li>
             </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="login.php"></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="minhasLocacoes.php"><img src="../imagem/v.png"></a>
           </li>
         </ul>
 
@@ -132,7 +136,7 @@ if ($categoria === 'todos') {
   <!--Filmes em clássicos fim-->
   <h1>Filmes <?php
   if ($categoria === 'todos') {
-    echo 'disponíveis';
+    echo 'disponíveis para alugar';
   } else {
     echo "de $categoria";
   }
