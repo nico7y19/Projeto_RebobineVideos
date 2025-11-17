@@ -22,14 +22,14 @@ class locacaoDAO
 
         $stmt = $this->conn->prepare($query);
 
-        $stmt->bindValue(':filme_id', $locacao->getFilmeId());
+        $stmt->bindValue(':filme_id', $locacao->getFilmeId()); // o bindValue troca o :filme_id pelo id_filme do obj locação
         $stmt->bindValue(':cliente_id', $locacao->getClienteId());
         $stmt->bindValue(':data_locacao', $locacao->getDataLocacao());
         $stmt->bindValue(':data_devolucao', $locacao->getDataDevolucao());
         $stmt->bindValue(':valor', $locacao->getValor());
 
         if ($stmt->execute()) {
-            return true;
+            return true; // salvou no banco de dados
         }
 
         return false;
