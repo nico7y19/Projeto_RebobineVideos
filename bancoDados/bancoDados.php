@@ -3,7 +3,7 @@
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'locadora_filme_site');
 define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_PASS', 'abcd1234');
 
 /**
  * Retorna uma nova conexão PDO com o banco de dados.
