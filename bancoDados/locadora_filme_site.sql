@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 
 --
 -- Banco de dados: `locadora_filme_site`
+CREATE DATABASE locadora_filme_site;
+USE locadora_filme_site;
 --
 
 -- --------------------------------------------------------
